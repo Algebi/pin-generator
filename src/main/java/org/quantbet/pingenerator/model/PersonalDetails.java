@@ -1,11 +1,13 @@
 package org.quantbet.pingenerator.model;
 
+import java.time.LocalDate;
+
 public class PersonalDetails {
 
     private final String name;
-    private final String dob;
+    private final LocalDate dob;
 
-    public PersonalDetails(String name, String dob) {
+    public PersonalDetails(String name, LocalDate dob) {
         this.name = name;
         this.dob = dob;
     }
@@ -14,7 +16,7 @@ public class PersonalDetails {
         return name;
     }
 
-    public String getDob() {
+    public LocalDate getDob() {
         return dob;
     }
 }
